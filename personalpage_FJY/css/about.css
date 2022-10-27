@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(215, 239, 250, 0.505);
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.about_bgc {
+    width: 100%;
+    height: 610px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: 49%;
+    bottom: 80px;
+    animation: downs 2s linear infinite;
+}
+
+@keyframes downs {
+    from {
+        transform: translatey(0px);
+        opacity: .6;
+    }
+    to {
+        transform: translatey(30px);
+        opacity: .8;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0;
+        /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1;
+        /*结尾状态 透明度为1*/
+    }
+}
+
+.about_tit {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 550;
+    padding-bottom: 40px;
+    bottom: 0;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    /*动画名称*/
+    -webkit-animation-duration: 1s;
+    /*动画持续时间*/
+    -webkit-animation-iteration-count: 1;
+    /*动画次数*/
+    -webkit-animation-delay: 0s;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 0 80px;
+}
+
+.me_tit {
+    width: 600px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: 550;
+}
+
+.me_img {
+    width: 700px;
+    height: 450px;
+}
+
+.animate {
+    padding-left: 20px;
+    width: 500px;
+    font-size: 16px;
+    color: #9B8651;
+    animation: 15s wordsLoop linear infinite normal;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+.iconlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 50px;
+}
+
+.iconimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+}
+
+.iconitem p {
+    padding-top: 20px;
+    color: #666;
+}
+
+.aboutinfo {
+    padding: 90px 100px;
+}
+
+.info_item {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    justify-content: flex-start;    /*左对齐*/
+    /*justify-content: space-between; 均匀排列每个元素,首个元素放置于起点，末尾元素放置于终点 */
+}
+
+.infoimg {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.info_item h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: rgb(78, 195, 241);
+}
+
+.info_item span {
+    font-size: 15px;
+    line-height:1.5;
+    color: #666;
+}
+
+music {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+}
+
+.music_img {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    animation: muscis 5s linear infinite;
+}
+
+@keyframes muscis {
+    from {
+        transform: rotate (0deg);
+        opacity: .6;
+    }
+    to {
+        transform: rotate(360deg);
+        opacity: .8;
+    }
+}
+
