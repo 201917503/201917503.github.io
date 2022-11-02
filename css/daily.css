@@ -1,0 +1,105 @@
+body{
+    background-color: #ecf8ff;
+}
+
+.daily {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.about_bgc {
+    width: 100%;
+    height: 610px;
+}
+
+.about_tit,
+.about_titt,
+.about_tits,
+.about_titl {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    bottom: 0;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about_tits {
+    top: 250px;
+}
+
+.about_titl {
+    top: 300px;
+}
+
+.about_titt {
+    top: 400px;
+}
+
+.dailylist {
+    padding: 30px 200px;
+}
+
+.line {
+    color: #fff;
+    background-color: #aacee1;
+    border-radius: 50%;
+    display: block;
+    font-size: 20px;
+    font-weight: 550;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.line::after {
+    position: absolute;
+    top: 60px;
+    content: '';
+    width: 4px;
+    background-color: #aac5e1;
+    height: 400px;
+    left: 30px;
+}
+
+.list_titls {
+    padding: 30px;
+    text-align: center;
+}
+
+.item_info {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.imgsinfo {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.item_info p {
+    width: 400px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.right_tit {
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+    color: #85bee7;
+    font-weight: 550;
+}
