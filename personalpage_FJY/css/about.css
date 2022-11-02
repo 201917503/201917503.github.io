@@ -1,0 +1,145 @@
+body{
+    background-color: rgba(215, 239, 250, 0.505);
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.about_bgc {
+    width: 100%;
+    height: 610px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0;
+        /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1;
+        /*结尾状态 透明度为1*/
+    }
+}
+
+.about_tit {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 550;
+    padding-bottom: 40px;
+    bottom: 0;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+    /*动画名称*/
+    -webkit-animation-duration: 1s;
+    /*动画持续时间*/
+    -webkit-animation-iteration-count: 1;
+    /*动画次数*/
+    -webkit-animation-delay: 0s;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 0 80px;
+}
+
+.me_tit {
+    width: 600px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: 550;
+}
+
+.me_img {
+    width: 700px;
+    height: 450px;
+}
+
+.animate {
+    padding-left: 20px;
+    width: 500px;
+    font-size: 16px;
+    color: #9B8651;
+    animation: 15s wordsLoop linear infinite normal;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+.iconlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 50px;
+}
+
+.iconimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+}
+
+.iconitem p {
+    padding-top: 20px;
+    color: #666;
+}
+
+.aboutinfo {
+    padding: 90px 100px;
+}
+
+.info_item {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+    justify-content: flex-start;    /*左对齐*/
+    /*justify-content: space-between; 均匀排列每个元素,首个元素放置于起点，末尾元素放置于终点 */
+}
+
+.infoimg {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.info_item h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: rgb(78, 195, 241);
+}
+
+.info_item span {
+    font-size: 15px;
+    line-height:1.5;
+    color: #666;
+}
