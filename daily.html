@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日常</title>
+    <link rel="stylesheet" href="./css/daily.css">
+</head>
+
+<body>
+    <div class="daily">
+        <h3 class="about_tit">生活需要热情 否则只是日历上的天数</h3>
+        <h4 class="about_tits">多拍照记录 </h4>
+        <h4 class="about_titl">那些或有趣或开心或伤心的时刻</h4>
+        <!--<h4 class="about_titt">希望我们每一个人 都可以被命运厚待 </h4>-->
+        <img class="about_bgc" src="./img/daily/daily_bg.jpg" alt="">
+        <img class="icon" src="./img/daily/daily_down.png" alt="">
+        <div class='ribbon'>
+            <a href='./index.html'><span>Home</span></a>
+            <a href='./about.html'><span>About</span></a>
+            <a href='./daily.html'><span>Daily</span></a>
+            <a href='./picture.html'><span>Picture</span></a>
+        </div>
+        
+        <div class="dailylist">
+            <h3 class="list_titls">最近的那些时刻记录</h3>
+
+            <div class="item_info">
+                <span class="line">1</span>
+                <img src="./img/daily/daily_img1.png" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">或许是自画像？</span>
+                    <p>“快看我画的可爱的小人”</p>
+                    <p>“好像你呀”</p>
+                    <p>“是嘛，好像是有点诶，发型和脸型确实和我差不多”</p>
+                    <p>“你这真的是给自己画了个自画像”</p>
+                </div>
+            </div>
+
+            <div class="item_info">
+                <span class="line">2</span>
+                <img src="./img/daily/daily_img2.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">风·这也是我</span>
+                    <p>
+                        长发时候的样子<br>
+                        下课在湖边和朋友一起拍照<br>
+                        风刚好过来
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="item_info">
+                <span class="line">3</span>
+                <img src="./img/daily/daily_img3.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">刚出生没多久的小黄鸭</span>
+                    <p>在从图书馆回去的路上<br>
+                        遇到了可爱的小黄鸭兄弟，不过他们的家人没有在身边<br>
+                        和朋友一起带着他们去找寻&emsp;&emsp;未果<br>
+                        室友提议带回宿舍&emsp;&emsp;否决<br>
+                        放他们回到原来的地方，准备第二天再过来
+                    </p>
+                </div>
+            </div>
+
+            <div class="item_info">
+                <span class="line">4</span>
+                <img src="./img/daily/daily_img4.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit"> 最近画的画中最喜欢的两幅</span>
+                    <p>
+                        在色彩匮乏的备忘录中完成<br>
+                        但是貌似效果还不错<br>
+                        可能是参照原图的原因
+                    </p>
+                </div>
+            </div>
+
+            <div class="item_info">
+                <span class="line">5</span>
+                <img src="./img/daily/daily_img5.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">人遛狗？还是狗遛人</span>
+                    <p>
+                        晚上上完课去到卖东西的老板那<br>
+                        三个人牵着老板的两只狗狗逛校园<br>
+                        中途一只狗狗挣脱了绳子去追大鹅<br>
+                        室友只能去追狗<br>
+                        所以形成了湖边比较神奇的一幕<br>
+                        人☞  狗☞  鹅
+                    </p>
+                </div>
+            </div>
+
+            <div class="item_info">
+                <span class="line">6</span>
+                <img src="./img/daily/daily_img6.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">准备拍毕业照的学长学姐们</span>
+                    <p>
+                        还是大三的我路过<br>
+                        虽然那天的风很大<br>
+                        但仍旧阻挡不了他们拍照的决心<br>
+                        不过多长时间拍照的可能就是我们了
+                    </p>
+                </div>
+            </div>
+
+            <div class="item_info">
+                <span class="line">7</span>
+                <img src="./img/daily/daily_img7.jpg" class="imgsinfo" alt="">
+                <div class="rights">
+                    <span class="right_tit">弟弟学校的彩虹</span>
+                    <p>
+                        那天雨可大了<br>
+                        不过窝在家里的我，看到了朋友圈里别人发的彩虹<br>
+                        好像是弟弟的学校？<br>
+                        在学校待着的我，有点想回家了(๑•́ωก̀๑)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <audio autoplay="autoplay" id="music" loop="loop">
+            <source src="./music/Ordinary_Day.mp3" type="audio/MP3">
+        </audio>
+        <img class="music_img" id="musicImg" src="./img/music.png" onClick="play()" alt="user">
+    </div>
+
+</body>
+<script>
+    /*window.onload = function(){ 
+         var audio = document.getElementById('music');
+             audio.pause();//打开页面时无音乐
+    }*/
+    function play() {
+        var audio = document.getElementById('music');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('musicImg').src="img/music.png";
+        }else{
+            audio.pause();
+            //audio.currentTime = 0;音乐从头播放
+            document.getElementById('musicImg').src="img/stop.png";
+        }
+    }
+</script>
+</html>
+

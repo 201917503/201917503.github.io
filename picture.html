@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册记录</title>
+    <link rel="stylesheet" href="./css/picture.css">
+</head>
+
+<body>
+    <div class="show">
+      <h3 class="show_tit">~和朋友一起的时光~</h3>
+        <img class="show_bgc" src="./img/pre/pre_bg.jpg" alt="">
+        <div class='ribbon'>
+            <a href='./index.html'><span>Home</span></a>
+            <a href='./about.html'><span>About</span></a>
+            <a href='./daily.html'><span>Daily</span></a>
+            <a href='./picture.html'><span>Picture</span></a>
+        </div>
+        <div class="box">
+          <img src="./img/pre/pre1.jpg">
+          <img src="./img/pre/pre2.jpg"> 
+          <img src="./img/pre/pre3.jpg"> 
+          <img src="./img/pre/pre4.jpg"> 
+          <img src="./img/pre/pre5.jpg"> 
+          <img src="./img/pre/pre6.jpg"> 
+          <img src="./img/pre/pre0.jpg">    
+      </div>
+
+      <audio autoplay="autoplay" id="music" loop="loop">
+        <source src="./music/生活需要多一点乐观.mp3" type="audio/MP3">
+      </audio>
+      <img class="music_img" id="musicImg" src="./img/music.png" onClick="play()" alt="user">
+      
+    </div>
+</body>
+
+<script>
+  /*window.onload = function(){ 
+       var audio = document.getElementById('music');
+           audio.pause();//打开页面时无音乐
+  }*/
+  function play() {
+      var audio = document.getElementById('music');
+      if (audio.paused) {
+          audio.play();
+          document.getElementById('musicImg').src="img/music.png";
+      }else{
+          audio.pause();
+          //audio.currentTime = 0;音乐从头播放
+          document.getElementById('musicImg').src="img/stop.png";
+      }
+  }
+</script>
+  
+</html>
+
+
